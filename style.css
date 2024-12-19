@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  width: 100%;
+}
+.container {
+  min-width: 100vh;
+  /* height: 100vh; */
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.container .sidebar {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* position: relative; */
+  background-color: rgb(51, 59, 79);
+  padding-top: 20px;
+  color: white;
+  box-shadow: 10px 0px rgb(68, 149, 158), 20px 0px rgb(163, 203, 204);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.profile {
+  text-align: center;
+  padding-left: 30%;
+}
+.profile .pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* box-shadow: 4px 4px 4px 15px rgb(66, 130, 140); */
+}
+.profile .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skillss {
+  margin-left: 70px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.si {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skillss-list {
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+  line-height: 1.5em;
+}
+.skillss .box {
+  background-color: rgb(217, 217, 217);
+  color: #333;
+  display: inline-block;
+  margin-bottom: 3px;
+
+  padding: 5px 8px;
+  border-radius: 0.7em;
+  /* margin-right: 50px; */
+
+  /* border-radius: 5px; */
+}
+.skillss ul {
+  font-size: 0.8rem;
+  list-style: none;
+}
+.skillss .box {
+  margin-bottom: 10px;
+}
+
+.edu {
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+.edu .one {
+  margin-bottom: 10px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.edu .two {
+  font-size: medium;
+}
+
+.lang {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+.lang .langone {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.lang .langone {
+  margin-bottom: 15px;
+}
+.lang .langtwo .eng {
+  margin-bottom: 10px;
+}
+.lang .langtwo .spa {
+  margin-bottom: 10px;
+}
+.lang .langtwo .fre {
+  margin-bottom: 10px;
+}
+.int {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-left: 70px;
+}
+.int .intone {
+  margin-bottom: 15px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.int .inttwo .one {
+  margin-bottom: 10px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.int .inttwo .two {
+  margin-bottom: 10px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.int .inttwo .three {
+  margin-bottom: 10px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.int .inttwo .four {
+  margin-bottom: 10px;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.container .mainbar {
+  height: 100%;
+  width: 70%;
+  margin-left: 30px;
+  padding: 30px;
+  /* position: relative; */
+  background-color: white;
+}
+.header {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.headerone {
+  margin-bottom: 50px;
+  line-height: 2.5em;
+}
+.headerone h1 {
+  font-weight: 100;
+  font-size: 3em;
+}
+.headertwo {
+  display: block;
+  text-align: justify;
+}
+.headerone p {
+  font-size: 20px;
+  color: rgb(167, 201, 204);
+}
+.headertwo p {
+  font-size: 20px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 50px;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(50, 58, 77);
+  color: white;
+  height: 100px;
+  border-radius: 0.7em;
+  padding: 20px;
+
+  width: 1500px;
+  margin-left: 30px;
+  margin-right: 40px;
+  font-size: 20px;
+}
+.contact span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.work {
+  line-height: 1.5em;
+}
+.workone {
+  display: flex;
+  gap: 10px;
+}
+.work h3 {
+  font-size: 25px;
+}
+.sales {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+
+.sales ul {
+  font-size: 20px;
+}
+li::marker {
+  color: rgb(163, 203, 204);
+}
+.listing {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin-left: 20px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(167, 201, 204);
+}
+.text1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(167, 201, 204);
+}
+.retail {
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+.retail ul {
+  font-size: 20px;
+}
+.courseone {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+.confone {
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.confone span {
+  font-size: 22px;
+}
